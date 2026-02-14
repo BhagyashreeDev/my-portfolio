@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhagyashree Badadal Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="icon" href="./images/favicon.png" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images//logo.png" class="logo" alt="logo image" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#major-projects">Projects</a></li>
+            <!-- <li><a href="#minor-projects">Learnings</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Aspiring Full Stack Developer | Java | SQL | React</p>
+          <h1>Hi, I'm <span>Bhagyashree</span> Badadal</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------about----------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              An engineering graduate passionate about software development.
+              Skilled in Java, web technologies, and database management. Eager
+              to contribute to innovative projects and grow as a Full Stack
+              developer.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onClick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onClick="opentab('experience')">Education</p>
+              <p class="tab-links" onClick="opentab('education')">Experience</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Languages</span><br />Java, C</li>
+                <li>
+                  <span>Web</span><br />HTML, CSS, JavaScript, React, Redux
+                </li>
+                <li><span>Databases</span><br />SQL, MongoDB</li>
+                <li>
+                  <span>Tools</span><br />VS Code, Eclipse, Git, Maven, Tableau
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2025</span><br />B.E from Sri Siddhartha Institute of
+                  Technology
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>(Ongoing) 2025</span><br />Java Full Stack Development -
+                  Kodnest
+                </li>
+                <li>
+                  <span>Apr 2025</span><br />Foundational Java Backend
+                  Development - Revature Pre-Training
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------projects------->
+    <div id="major-projects">
+      <div class="container">
+        <h1 class="sub-title">Major Projects</h1>
+        <div class="major-projects-list">
+          <div>
+            <i class="fa-solid fa-store"></i>
+            <h2>Shop Management System</h2>
+            <p>
+              A Java desktop application utilizing Hibernate ORM for seamless
+              database connectivity. Features role-based security, automated
+              one-to-one image mapping, and persistent inventory management.
+            </p>
+            <a href="case-studies/shop-management-system.html"
+              >View Case Study</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-chart-line"></i>
+            <h2>Placements Pulse</h2>
+            <p>
+              An interactive analytics dashboard transforming raw placement data
+              into visual insights. Tracks hiring trends, salary distributions,
+              and academic performance metrics using Tableau.
+            </p>
+            <a href="case-studies/placements-pulse.html">View Case Study</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-calendar-check"></i>
+            <h2>Appointment System</h2>
+            <p>
+              A responsive React.js CRUD application focused on real-time
+              scheduling. Demonstrates advanced state lifting, inline editing,
+              and seamless UI updates for efficient data handling.
+            </p>
+            <a href="case-studies/appointment-management-system.html"
+              >View Case Study</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------contact----- -->
+    <div id="contact">
+      <div class="container">
+        <div class="contact">
+          <h1 class="sub-title">Contact Me</h1>
+          <div class="contact-info">
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>bhagyashree.b.eng@gmail.com
+            </p>
+          </div>
+
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/bhagyashreebadadal"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/BhagyashreeDev"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+
+          <a
+            href="https://drive.google.com/file/d/1aQHhtBFJzAgo8v1jMytszHbNi3mCP0nO/view?usp=drive_link"
+            target="_blank"
+            class="btn btn2"
+          >
+            View & Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openMenu() {
+        sidemenu.style.right = "0";
+      }
+      function closeMenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

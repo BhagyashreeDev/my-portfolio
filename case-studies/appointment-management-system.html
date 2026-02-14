@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment Management System</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="case-study.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png">
+  <body>
+    <section id="appointment-system" class="case-study-container">
+      <h1 class="case-study-title">
+        Appointment Management System – React CRUD Dashboard
+      </h1>
+
+      <div class="row">
+        <div class="about-col-2">
+          <h2 class="case-study-subtitle">Problem</h2>
+          <p class="case-study-text">
+            Managing schedules through static lists leads to data synchronization 
+            issues. There was a need for a reactive interface that handles real-time 
+            updates, inline editing, and state persistence without page reloads.
+          </p>
+
+          <h2 class="case-study-subtitle">Approach</h2>
+          <ul class="case-study-list">
+            <li>Implemented State Lifting to maintain a 'Single Source of Truth' in the parent App component</li>
+            <li>Developed controlled form components utilizing React Hooks for synchronized input handling</li>
+            <li>Created a dynamic CRUD logic for adding, deleting, and bulk-clearing appointments</li>
+            <li>Designed an inline editing toggle using local UI state to switch between text and input modes</li>
+          </ul>
+
+          <h2 class="case-study-subtitle">Tools & Technologies</h2>
+          <ul class="case-study-list">
+            <li>React.js (Functional Components)</li>
+            <li>JavaScript ES6 (Spread Operators & Closures)</li>
+            <li>React Hooks (useState)</li>
+            <li>CSS3 (Responsive Table Layouts)</li>
+          </ul>
+
+          <h2 class="case-study-subtitle">Key Insights</h2>
+          <ul class="case-study-list">
+            <li>Lifting state ensures data consistency across the Form and List sibling components</li>
+            <li>Immutable state updates (using spread operators) prevent side effects and render bugs</li>
+            <li>Local UI state for 'editedIndex' optimizes performance by limiting edit-mode to one row at a time</li>
+            <li>Form event prevention (preventDefault) ensures a seamless Single Page Application experience</li>
+          </ul>
+
+          <h2 class="case-study-subtitle">Challenges & Learnings</h2>
+          <ul class="case-study-list">
+            <li>Mastered the use of map() and splice() patterns for immutable array manipulation</li>
+            <li>Learned to manage memory efficiency by clearing input states after successful submissions</li>
+            <li>Improved skills in conditional rendering for complex UI transitions like Save/Cancel modes</li>
+          </ul>
+
+          <h2 class="case-study-subtitle">Links</h2>
+          <ul class="case-study-links">
+            <li>
+              <a
+                href="https://github.com/BhagyashreeDev/appointment-management-system"
+                target="_blank"
+                rel="noopener noreferrer"
+                >🔗 GitHub Repository</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://bhagyashreedev.github.io/appointment-management-system/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >🔗 Live Demo</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Management System</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="case-study.css" />
+  </head>
+  <body>
+    <section id="shop-management-system" class="case-study-container">
+      <h1 class="case-study-title">
+        Shop Management System – Java Desktop CRUD Application
+      </h1>
+
+      <div class="row">
+        <div class="about-col-2">
+          <h2 class="case-study-subtitle">Problem</h2>
+          <p class="case-study-text">
+            Manual inventory tracking and unrestricted user access led to data 
+            inconsistency and security risks. Existing workflows lacked a 
+            structured way to manage relational data and role-based permissions.
+          </p>
+
+          <h2 class="case-study-subtitle">Approach</h2>
+          <ul class="case-study-list">
+            <li>Developed a modular layered architecture separating View, Model, and Utility layers</li>
+            <li>Implemented Hibernate 6 ORM to map Java objects to MySQL relational tables</li>
+            <li>Designed a secure login system with specific ADMIN and USER access levels</li>
+            <li>Utilized HQL (Hibernate Query Language) for database-independent real-time filtering</li>
+          </ul>
+
+          <h2 class="case-study-subtitle">Tools & Technologies</h2>
+          <ul class="case-study-list">
+            <li>Java 17 & Java Swing (AWT)</li>
+            <li>Hibernate 6 (ORM)</li>
+            <li>MySQL 8 Database</li>
+            <li>Maven (Build Tool)</li>
+          </ul>
+
+          <h2 class="case-study-subtitle">Key Insights</h2>
+          <ul class="case-study-list">
+            <li>Bidirectional @OneToOne mapping with CascadeType.ALL ensures data integrity</li>
+            <li>Context-aware UI state management prevents conflicting CRUD operations</li>
+            <li>HQL LIKE queries enable instant search results without database dependency</li>
+            <li>Secure credential handling via .properties files prevents sensitive data leaks</li>
+          </ul>
+
+          <h2 class="case-study-subtitle">Challenges & Learnings</h2>
+          <ul class="case-study-list">
+            <li>Mastered memory management by using .dispose() during frame transitions</li>
+            <li>Learned to implement role-based access control (RBAC) at the application level</li>
+            <li>Improved understanding of relational database schemas and foreign key constraints</li>
+          </ul>
+
+          <h2 class="case-study-subtitle">Links</h2>
+          <ul class="case-study-links">
+            <li>
+              <a
+                href="https://github.com/BhagyashreeDev/shop_management_system"
+                target="_blank"
+                rel="noopener noreferrer"
+                >🔗 GitHub Repository</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
