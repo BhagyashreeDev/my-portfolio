@@ -89,3 +89,29 @@
     transform: translateY(0);
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .case-study-container {
+    padding: 40px 5%;
+  }
+
+  .case-study-title {
+    font-size: 30px;
+  }
+
+  .case-study-subtitle {
+    font-size: 28px;
+  }
+
+  .case-study-text {
+    font-size: 15px;
+  }
+
+  .case-study-list li {
+    font-size: 14px;
+  }
+
+  .case-study-links {
+    flex-direction: column;
+  }
+}
