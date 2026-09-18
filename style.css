@@ -346,7 +346,9 @@ nav ul li a:hover::after {
   align-items: center;
   gap: 8px;
   margin-top: 20px;
-  transition: background 0.3s, color 0.3s;
+  transition:
+    background 0.3s,
+    color 0.3s;
 }
 .btn-case-study:hover {
   background: #262626;
@@ -355,16 +357,16 @@ nav ul li a:hover::after {
 
 /* Card hover — button stays transparent */
 .major-projects-list div:hover .btn-case-study {
-    background: #262626;
-    color: #fff;
-    border-color: #fff;
+  background: #262626;
+  color: #fff;
+  border-color: #fff;
 }
 
 /* Card hover — button hover inside card */
 .major-projects-list div:hover .btn-case-study:hover {
-    background: #262626;
-    border-color: #fff;
-    color: #ff004f;
+  background: #262626;
+  border-color: #fff;
+  color: #ff004f;
 }
 
 /* -------css for small screen ------ */
